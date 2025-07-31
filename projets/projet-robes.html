@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets_projets/css_projet/projet-robe.css" />
+    <link rel="icon" href="./assets_projets/img_projets/logo.png" />
+    <title>Les robes de Cassandra</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header>
+        <div id="titre">
+          <div id="logo">
+            <img
+              src="./assets_projets/img_projets/logo.png"
+              alt="robe stylisé avec un C stylisé sur gauche"
+            />
+          </div>
+          <div id="nomdumag">
+            <h1 class="arizonia">Les Robes de Cassandra</h1>
+          </div>
+          <div id="connexion">
+            <i class="fa-solid fa-lock" style="color: #ce3db1"></i>
+            <p class="esteban">Connexion</p>
+          </div>
+        </div>
+        <nav id="nav-haut" class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span id="menu-mobile">
+                <i class="fa-solid fa-bars" style="color: #fd8804"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link esteban ps-3 pe-3" aria-current="page" href="#"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item ps-3 pe-3">
+                  <a class="nav-link esteban" href="#">Catalogue</a>
+                </li>
+                <li class="nav-item ps-3 pe-3">
+                  <a class="nav-link esteban" href="#">Qui-sommes-nous ?</a>
+                </li>
+                <li class="nav-item ps-3 pe-3">
+                  <a class="nav-link esteban" href="#">Retouches</a>
+                </li>
+                <li class="nav-item ps-3 pe-3">
+                  <a class="nav-link esteban" href="#">Panier</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Rechercher"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ce3db1"></i>
+          </button>
+        </form>
+      </header>
+      <main>
+        <div id="carouselmobile" class="carousel slide cacherordi">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets_projets/img_projets/robe4.webp"
+                class="d-block w-100"
+                alt="femme en robe de soirée noire"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets_projets/img_projets/robe3.webp"
+                class="d-block w-100"
+                alt="Femme en robe de soirée bordeaux"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets_projets/img_projets/robe13.png"
+                class="d-block w-100"
+                alt="femme en robe de soirée multicolore"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets_projets/img_projets/robe15.jpg"
+                class="d-block w-100"
+                alt="Femme en robe de soirée bleu ciel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets_projets/img_projets/robe6.webp"
+                class="d-block w-100"
+                alt="femme en robe de soirée blache"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets_projets/img_projets/robe8.webp"
+                class="d-block w-100"
+                alt="Femme en robe de soirée bordeaux"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselmobile"
+            data-bs-slide="prev"
+          >
+            <span class="fleches-carousel" aria-hidden="true">
+              <i class="fa-solid fa-angle-left" style="color: #ce3db1"></i>
+            </span>
+            <span class="visually-hidden">Précédent</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselmobile"
+            data-bs-slide="next"
+          >
+            <span class="fleches-carousel" aria-hidden="true">
+              <i class="fa-solid fa-angle-right" style="color: #ce3db1"></i>
+            </span>
+            <span class="visually-hidden">Suivant</span>
+          </button>
+        </div>
+        <div id="carouseltab-ordi" class="carousel slide cachermobile">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets_projets/img_projets/Banniere1.png"
+                class="d-block w-100"
+                alt="femmes en robe de soirée noire et bordeaux"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets_projets/img_projets/banniere2.png"
+                class="d-block w-100"
+                alt="Femmes en robes de soirées multicolore et bleu ciel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets_projets/img_projets/banniere3.png"
+                class="d-block w-100"
+                alt="femme en robe de soirée dorée"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouseltab-ordi"
+            data-bs-slide="prev"
+          >
+            <span class="fleches-carousel" aria-hidden="true">
+              <i class="fa-solid fa-angle-left" style="color: #ce3db1"></i>
+            </span>
+            <span class="visually-hidden">Précédent</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouseltab-ordi"
+            data-bs-slide="next"
+          >
+            <span class="fleches-carousel" aria-hidden="true">
+              <i class="fa-solid fa-angle-right" style="color: #ce3db1"></i>
+            <span class="visually-hidden">Suivant</span>
+          </button>
+        </div>
+
+        <div id="div-carte">
+          <div class="carte">
+            <p class="arizonia prix-carte">-20%</p>
+            <div>
+              <img
+                class="w-100"
+                src="./assets_projets/img_projets/robe6.webp"
+                alt="femme en robe de soirée blanche"
+              />
+            </div>
+            <i
+              class="fa-solid fa-cart-plus icone-carte"
+              style="color: #ce3db1"
+            ></i>
+          </div>
+          <div class="carte">
+            <p class="arizonia prix-carte">-15%</p>
+            <div>
+              <img
+                class="w-100"
+                src="./assets_projets/img_projets/robe2.png"
+                alt="femme en robe de soirée bleu sarcelle"
+              />
+            </div>
+            <span>
+              <i
+                class="fa-solid fa-cart-plus icone-carte"
+                style="color: #ce3db1"
+              ></i>
+            </span>
+          </div>
+          <div class="carte">
+            <p class="arizonia prix-carte">-50%</p>
+            <div>
+              <img
+                class="w-100"
+                src="./assets_projets/img_projets/robe8.webp"
+                alt="femme en robe de soirée bordeaux"
+              />
+            </div>
+            <span>
+              <i
+                class="fa-solid fa-cart-plus icone-carte"
+                style="color: #ce3db1"
+              ></i>
+            </span>
+          </div>
+          <div class="carte">
+            <p class="arizonia prix-carte">-10%</p>
+            <div>
+              <img
+                class="w-100"
+                src="./assets_projets/img_projets/robe9.png"
+                alt="femme en robe de soirée noir et rouge"
+              />
+            </div>
+            <i
+              class="fa-solid fa-cart-plus icone-carte"
+              style="color: #ce3db1"
+            ></i>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Mention Légale</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c7342a9275.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

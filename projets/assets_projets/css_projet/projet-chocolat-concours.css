@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #f8edd2;
+  width: 100%;
+  height: 100%;
+}
+main {
+  flex: 1;
+}
+.font2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+.font1 {
+  font-family: "Dancing Script", cursive;
+}
+
+nav {
+  position: relative;
+  width: fit-content;
+  /* border-right: 3px solid #daa520;
+      border-bottom: 3px solid #daa520; */
+border: #daa520 solid 2px;
+ 
+  #menu-btn {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background-color: #7b3f00;
+    color: #daa520;
+    border: none;
+    text-transform: uppercase;
+    div {
+      width: 10px;
+      height: 10px;
+      border-right: 2px solid #daa520;
+      border-bottom: 2px solid #daa520;
+      transform: rotateZ(-45deg);
+      margin: 5px 0 10px 5px;
+    }
+  }
+  #menu-btn:focus {
+    color: white;
+    border-bottom: none;
+    div {
+      border-color: white;
+      transform: rotateZ(45deg);
+    }
+  }
+  /* changer le couleur dans le sous menu c en bas */
+  #submenu {
+  z-index: 1;
+    position: absolute;
+    top: 100%;
+left: -2px;
+    background: #7b3f00;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 104px;
+    display: none;
+    border: none;
+    border-right: 2px solid #daa520;
+    border-bottom: 2px solid #daa520;
+    border-left: 2px solid #daa520;
+    li {
+      padding: 8px 16px;
+      width: 100px;
+    }
+    li > a {
+      text-decoration: none;
+      color: #daa520;
+      /* display: block; */
+      font-family: "Josefin Sans", sans-serif;
+    }
+    li a:focus {
+      color: white;
+    }
+  }
+}
+#acc{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+  margin: 15px 10px;
+}
+#co {
+  border-left: #daa520 solid 2px;
+}
+header {
+  background-color: #7b3f00;
+}
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 120px;
+    margin:0px 25px;
+}
+header img {
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+header h1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 3.5em;
+  color: #daa520;
+  margin: auto;
+}
+#connexion {
+  background-color: #7b3f00;
+  color: #daa520;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 1.2em;
+  font-family: "Josefin Sans", sans-serif;
+  border: #daa520 solid 2px;
+  height: 44px;
+}
+#nave {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+#nave > a {
+  color: #daa520;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: "Josefin Sans", sans-serif;
+
+  background-color: #7b3f00;
+  padding-top: 13px;
+}
+#bg {
+  background-image: url(../img_projets/effeilchoco.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 160px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #daa520;
+  text-align: center;
+  margin: auto;
+font-size: 2em;
+position: relative;
+top: 20%;
+}
+#description {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(218, 165, 32, 0.2);
+  text-align: center;
+  color: #7b3f00;
+      font-family: "Josefin Sans", sans-serif;
+  
+}
+#formulaire {
+  width: 90%;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  background: rgba(218, 165, 32, 0.2);
+}
+#formulaire .row {
+  display: flex;
+  gap: 10px;
+}
+#formulaire .row input {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+}
+#formulaire input,
+#formulaire button {
+   width: 100%; 
+  margin-bottom: 10px;
+  padding: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+}
+#formulaire button {
+  background: #7b3f00;
+  color: #daa520;
+  margin: 20px auto 0 auto;
+  display: block;
+  cursor: pointer;
+  width: 25%;
+}
+#formulaire button:hover {
+  background: #daa520;
+  color: #7b3f00;
+}
+#formulaire input[type="email"],
+#formulaire input[type="tel"] {
+  box-sizing: border-box;
+}
+footer {
+  background: #7b3f00;
+  padding: 30px 0 20px 0;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  margin-top: 5%;
+  
+}
+footer > div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+footer a {
+  color: #daa520;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 0 29px;
+}
+
+/* Tablette (max-width: 1024px) */
+@media (max-width: 1024px) {
+  body,
+  h1,
+  
+  p,
+  a,
+  input,
+  button {
+    font-size: 95%;
+  }
+  footer a {
+    font-size: 1em;
+  }
+  #menu-btn {
+    display: block;
+  }
+  #submenu {
+    display: none;
+  }
+  #submenu.open {
+    display: block;
+  }
+  #nave {
+    display: none;
+  }
+  #connexion {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  body,
+  h1,
+  
+  p,
+  a,
+  input,
+  button {
+    font-size: 90%;
+  }
+  footer a {
+    font-size: 0.95em;
+  }
+}
+
+/* Menu horizontal pour ordinateur */
+@media (min-width: 1025px) {
+  nav {
+    width: 80vw; /* Prend toute la largeur de la fenêtre */
+    border: none;
+    margin: auto;
+    margin-top: 15px;
+  }
+  #menu-btn,
+  #submenu {
+    display: none !important;
+  }
+  #nave {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background: #7b3f00;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 80vw;
+  }
+  #nave > a {
+    display: inline-block;
+    color: #daa520;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: "Josefin Sans", sans-serif;
+    /* border: none; */
+    background: none;
+    padding: 10px 20px;
+    transition: color 0.2s;
+  }
+  #nave > a:hover {
+    color: #fff;
+  }
+  #connexion {
+    display: none !important;
+  }
+  #bg h2 {
+    font-size: 2.5em;
+    padding: 30px 0;
+  }
+  input{
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #7b3f00;
+    font-size: 1.5em;
+  }
+  #formulaire input,
+  #formulaire button{
+    border-radius: 5px;
+    height: 65px;
+    font-size: 1.5em;
+} 
+  #formulaire input{
+  font-size: 1.5em;
+}
+#logo {
+  width:140px;
+}
+#logo img{ 
+  width :100%;
+}
+}
+
+/* Taille du h2 sur tablette */
+@media (max-width: 1024px) and (min-width: 769px) {
+  #bg h2 {
+    font-size: 2em;
+    padding: 20px 0;
+}}

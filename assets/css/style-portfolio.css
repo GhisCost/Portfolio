@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Numans&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: "Bonheur Royale", cursive;
+font-family: "Numans", sans-serif; */
+
+.corps {
+  width: 100%;
+  font-family: "Numans", sans-serif;
+  background-color: rgb(240, 255, 245);
+  cursor: url(../img/cursor-3-16-Copie.png), auto;
+}
+a{
+  cursor: url(../img/one-finger-16-vert.png), pointer;
+}
+
+#corpsAc{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+#titre {
+  font-family: "Bonheur Royale", cursive;
+  font-size: 90px;
+  color: #f0fff5;
+  /* -webkit-text-stroke: 0.4px #F39E16; */
+  padding: 10px;
+  background-color: #28a736;
+  mask:
+    radial-gradient(50px at 0 0,#0000 98%,#000) 0/51% 100% no-repeat,
+    radial-gradient(45px at 100% 100%,#0000 98%,#000) 100%/51% 100% no-repeat;
+}
+
+
+.titrepages {
+  color: #28a736;
+  /* -webkit-text-stroke: 0.4px #F39E16; */
+   font-family: "Bonheur Royale", cursive;
+  font-size: 90px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#soustitre {
+  color: #f0fff5;
+  -webkit-text-stroke: 0.4px #28a736;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+header {
+  width: 100%;
+}
+
+.lienaccueil {
+  text-decoration: none;
+  color: rgb(243, 158, 22);
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.lienaccueil:hover{
+  border-top: rgb(40, 167, 54) 1px solid;
+  margin-top: -1px;
+}
+
+#navtitre {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+#divtitre {
+  padding: 15px 150px;
+}
+
+
+
+#conteneurtitrenav{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 60%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.pied{
+  width: 50%;
+  text-align: justify;
+  margin-top: 40px;
+  color: rgb(10, 37, 13);
+  opacity: 0.7;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.pied a {
+  text-decoration: none;
+  color: #0a250d;
+  font-weight: 600;
+  
+}
+
+.pied a:hover{
+  color: rgb(240, 255, 245);
+  -webkit-text-stroke: 0.4px #F39E16;
+  opacity: 1;
+}
+
+.hrpages{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(240, 255, 245, 0), rgba(243, 158, 22, 0.75), rgba(240, 255, 245, 0));
+    width: 70%;
+    margin: auto;
+}
+
+.sectionpage{
+  width:50%;
+  margin: auto;
+  margin-top: 15px;
+}
+.sectionpage iframe {
+  margin-bottom: 15px;
+}
+.sectionpage:hover{
+  box-shadow: 2px 2px 6px #F39E16;
+  font-style: italic;
+}
+/* Css spécifique à la page histoire */
+
+
+#bio{
+  width: 50%;
+  margin:25px auto ;
+  padding-top: 25px;
+  text-align:justify;
+}
+
+#bio p {
+  margin: 20px;
+  color: #0a250d;
+}
+
+#bio a {
+  color: #0a250d;
+}
+
+#bio a:hover {
+ color: #f0fff5;
+-webkit-text-stroke: 0.4px rgb(243, 158, 22);
+}
+
+#navhistoire{
+  display:flex;
+  align-items: center;
+  height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+
+
+/* Css spécifique à la page projet */
+
+#titrenavpro{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 60%;
+}
+
+.carteprojet{
+  width: 23%;
+  text-decoration: none;
+  text-align: center;
+  color: #28a736;
+  box-shadow: 0 3px 6px rgb(243, 158, 22);
+  margin: 15px;
+}
+
+.carteprojet:hover{
+  transform: scale(1.1);
+}
+
+.conteneurcarte{
+  width: 80%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+margin-top: 50px;
+}
+
+.carteprojet img {
+  width: 100%;
+}
+
+#navprojet{
+  display:flex;
+  align-items: center;
+  height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  margin-bottom: 70px;
+}
+
+/* Css spécifique à la page information */
+
+#navinfo{
+  display:flex;
+  align-items: center;
+  height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+
+#titrenavinfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+#lieninfo{
+  margin-bottom: 15px;
+}
+
+#maininfo section {
+  width: 80%;
+margin: auto;
+margin-top: 70px ;
+text-align: center;
+}
+.conteneurimginfo{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.divimginfo {
+width: 10%;
+
+}
+
+.divimginfo img {
+width: 100%;
+
+}
+
+.soustitreinfo{
+  color: #28a736;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 45px;
+}
+
+#textcomp{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#textcomp p{
+color: #F39E16;
+font-size: 20px;
+}
+
+/* Css spécifique contact */
+
+#navcontact {
+    display:flex;
+  align-items: center;
+  height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  margin-bottom: 70px;
+}
+
+#titrenavcontact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; 
+}
+
+#liencontact{
+  margin-bottom: 15px;
+}
+
+.soustitrecontact{
+  color: rgb(40, 167, 54);
+  text-align: center;
+font-size: 40px;
+margin-bottom: 25px;
+}
+
+
+
+#titretrouver{
+    color: #f0fff5;
+    -webkit-text-stroke: 0.4px rgb(40, 167, 54);
+  text-align: center;
+  font-family: "Bonheur Royale", cursive;
+  font-size: 70px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-decoration: underline #F39E16;
+}
+
+.conteneurcontact{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  height: 150px;
+}
+.iconecontact{
+  font-size: 35px;
+}
+
+#conteneurcarte{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+
+}
+/* Css transition */
+#corpsAc, .page-transition {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-transition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(240, 255, 245);
+  z-index: 10;
+  transform: translate(0, 0);
+  opacity: 0;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.page-transition.show {
+  opacity: 1;
+}
+
+.slide-left-in { transform: translateX(100%); }
+.slide-right-in { transform: translateX(-100%); }
+.slide-up-in { transform: translateY(100%); }
+.slide-down-in { transform: translateY(-100%); }
+
+.slide-left-in.show { transform: translateX(0); }
+.slide-right-in.show { transform: translateX(0); }
+.slide-up-in.show { transform: translateY(0); }
+.slide-down-in.show { transform: translateY(0); }

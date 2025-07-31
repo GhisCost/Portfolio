@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+.main {
+  background-color: rgba(218, 165, 32, 0.2);
+}
+
+h1 {
+  font-size: 150px;
+}
+#tete {
+  max-height: 150px;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+
+  color: #daa520;
+
+  text-align: center;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+
+  color: #7b3f00;
+
+  text-align: center;
+}
+
+.container {
+  width: auto;
+}
+
+header {
+  background-color: #7b3f00;
+
+  border-bottom: 3px solid #daa520;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Dancing Script", cursive;
+  color: #daa520;
+  text-align: center;
+  width: 85%;
+}
+
+
+
+.btn-choco {
+  background-color: #7b3f00;
+
+  color: #daa520;
+
+  width: 120px;
+
+  height: 40px;
+
+  position: relative;
+
+  border: #daa520 2px solid;
+}
+
+.salon {
+  text-align: center;
+}
+
+.sculpture {
+  text-align: center;
+}
+
+.map {
+  text-align: center;
+
+  font-family: "Dancing Script", cursive;
+
+  color: #daa520;
+}
+
+footer {
+  background-color: #7b3f00;
+
+  border-top: #daa520 3px solid;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+
+  color: #daa520;
+
+  font-family: josefin sans, sans-serif;
+
+  font-size: 20px;
+}
+
+#nav2 {
+  width: 50%;
+}
+
+@media (min-width: 702px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  #nav_ordi {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  #connexion {
+    border-left: #daa520 1px solid;
+  }
+
+  #nav2 {
+    display: none;
+  }
+
+  #nav_ordi {
+    display: block;
+
+    background-color: #7b3f00;
+
+    text-align: center;
+
+    width: 100%;
+
+    border-radius: 5px;
+  }
+
+  #nav_ordi ul {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    list-style: none;
+
+    justify-content: space-evenly;
+
+    align-items: center;
+
+    padding: 5px 0px;
+
+    line-height: 2.5;
+
+    border-radius: 5px;
+  }
+
+  #nav_ordi a {
+    text-decoration: none;
+
+    color: #daa520;
+
+    font-family: "Josefin Sans", sans-serif;
+
+    padding: 10px 20px;
+
+    font-size: 20px;
+  }
+
+  .btn-choco {
+    display: none;
+  }
+}
+
+nav {
+  position: relative;
+
+  display: inline-block;
+}
+
+#nav2 {
+  border: 2px solid #daa520;
+
+  width: fit-content;
+}
+
+#menu-btn {
+  background-color: #7b3f00;
+
+  color: #daa520;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: none;
+
+  height: 40px;
+
+  font-size: 1em;
+
+  font-family: josefin sans, sans-serif;
+
+  width: 120px;
+}
+
+#menu-btn div {
+  width: 10px;
+
+  height: 10px;
+
+  border-right: 2px solid #daa520;
+
+  border-bottom: 2px solid #daa520;
+
+  transform: rotateZ(-45deg);
+
+  margin: 5px 0 10px 5px;
+}
+
+#menu-btn:focus {
+  color: white;
+
+  div {
+    border-color: white;
+
+    transform: rotateZ(45deg);
+  }
+}
+
+/* changer le couleur dans le sous menu c en bas */
+
+#submenu {
+  position: absolute;
+
+  top: 100%;
+
+  left: 0;
+
+  background: #7b3f00;
+
+  padding: 0;
+
+  margin: 0;
+
+  list-style: none;
+
+  border: 1px solid #daa520;
+
+  min-width: 120px;
+
+  display: none;
+}
+
+#submenu li {
+  padding: 8px 16px;
+}
+
+#submenu li a {
+  text-decoration: none;
+
+  color: #daa520;
+
+  display: block;
+}

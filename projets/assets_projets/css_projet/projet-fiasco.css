@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#corps {
+  background-color: #010101;
+}
+
+header {
+  width: 94%;
+  position: relative;
+  height: 80vh;
+  z-index: 10;
+  margin: 0px auto;
+}
+
+header::before {
+  background-image: url(../img_projets/eggs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#navtitre {
+  display: flex;
+  justify-content: space-between;
+  color: #b9b9b9;
+  font-size: 1.35em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  padding-top: 30px;
+}
+
+#navig {
+  width: 50%;
+}
+
+#navig ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+#navig a {
+  text-decoration: none;
+  color: #b9b9b9;
+  padding: 15px 5px;
+}
+
+#navig a:focus {
+  border: 1px solid #dca621;
+}
+#nom {
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+
+#titreban {
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#titreban h2 {
+  font-family: "Dancing Script", cursive;
+  color: #dca621;
+  font-size: 3.5em;
+}
+
+#titreban h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 6.5em;
+  margin: 100px;
+}
+
+#titreban h3 {
+  font-family: "Roboto", sans-serif;
+  color: #b9b9b9;
+  font-size: 2em;
+  font-weight: 400;
+}
+main {
+  width: 94%;
+  margin: -15px auto;
+}
+
+#discorver {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#div-buger {
+  border: 1px solid #dca621;
+  width: 45%;
+}
+
+#div-buger img {
+  padding: 35px 0px 0px 35px;
+  width: 100%;
+  display: block;
+}
+
+.text-sh {
+  width: 45%;
+  color: white;
+}
+
+.text-sh h5 {
+  font-family: "Dancing Script", cursive;
+  color: #dca621;
+  font-size: 2.7em;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.text-sh h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+.text-sh p {
+  font-size: 1.2em;
+  padding-bottom: 15px;
+}
+
+.jaune-dessous {
+  color: #dca621;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+
+#tasteful {
+  display: flex;
+  width: 60%;
+  margin: 50px auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+#div-oeuf {
+  border: 1px solid #dca621;
+  width: 45%;
+}
+
+#div-oeuf img {
+  padding: 35px 35px 0px 0px;
+  width: 100%;
+  display: block;
+}
+
+#menu {
+  text-align: center;
+  color: white;
+  width: 50%;
+  margin: auto;
+}
+
+#menu h5 {
+  font-family: "Dancing Script", cursive;
+  color: #dca621;
+  font-size: 2.6em;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+#menu h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+#menu p {
+  font-size: 1.25em;
+  padding-bottom: 60px;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  color: #b9b9b9;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.45em;
+}
+
+#menu_cartes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.carte-menu {
+  color: #b9b9b9;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 150px;
+  gap: 40px;
+}
+
+.carte-menu:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.image-carte {
+  width: 30%;
+}
+.image-carte img {
+  width: 100%;
+}
+
+.text-carte {
+  width: 45%;
+}
+
+.prix-carte {
+  color: #dca621;
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+  font-style: italic;
+  padding-top: 15px;
+}
+
+.titre-carte {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding-bottom: 15px;
+}
+
+.p-pair {
+  text-align: end;
+}
+
+.text-carte p:nth-child(even) {
+  font-size: 1.1em;
+}
+
+#chef {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#chef div {
+  width: 45%;
+  text-align: justify;
+}
+
+#chef h3 {
+  font-family: "Dancing Script", cursive;
+  color: #dca621;
+  font-size: 2.6em;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+#chef h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: white;
+}
+
+#chef p {
+  color: #b9b9b9;
+}
+
+#chef .jaune-dessous {
+  color: #dca621;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  padding-top: 70px;
+}
+
+#reservation {
+  height: 80vh;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+#reservation::before {
+  background-image: url(../img_projets/reservation.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#reservation h3 {
+  font-family: "Dancing Script", cursive;
+  color: #dca621;
+  font-size: 3.5em;
+  padding: 45px;
+  font-style: italic;
+}
+
+#reservation h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: white;
+}
+#reservation p {
+  color: #b9b9b9;
+  font-size: 1.8em;
+  padding: 0px 250px 15px 250px;
+  line-height: 1.6em;
+}
+
+#reservation input {
+  background: none;
+  color: #b9b9b9;
+  border-radius: 10px;
+  border: 1px solid #b9b9b9;
+  font-size: 1.5em;
+  padding: 10px 10px;
+  text-align: center;
+  height: 50px;
+}
+
+#reservation form {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+
+#nbre-res {
+  background: none;
+  color: #b9b9b9;
+  border-radius: 10px;
+  border: 1px solid #b9b9b9;
+  font-size: 1.5em;
+  padding: 10px 10px;
+  text-align: center;
+  height: 50px;
+}
+
+#reservation button {
+  background-color: #dca621;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 1.4em;
+  padding: 10px 35px;
+}
+
+#recettes {
+  width: 60%;
+  text-align: end;
+  margin: auto;
+}
+
+#recettes h3 {
+  font-family: "Dancing Script", cursive;
+  color: #dca621;
+  font-size: 2.6em;
+  font-style: italic;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+#recettes h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: white;
+}
+
+#recettes .jaune-dessous {
+  color: #dca621;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  margin-top: 35px;
+}
+
+#recettes p {
+  color: #b9b9b9;
+  font-size: 1.6em;
+  padding: 10px;
+}
+
+#recettes span {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  width: 45px;
+  margin-right: 10px;
+}
+
+#plan {
+  margin: 200px auto 11px auto;
+  width: 95%;
+}
+
+#plan iframe {
+  width: 100%;
+}
+
+footer {
+  background-image: url(../img_projets/splash.png);
+  background-color: #383838;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+footer>div {
+  width: 25%;
+}
+
+footer>div:first-child {
+  margin-left: 70px;
+}
+
+footer h4 {
+color: #dca621;
+font-size: 1.8em;
+margin-bottom: 50px;
+}
+
+footer p {
+  color: #b9b9b9;
+  font-size: 1.1em;
+}
+
+#tm {
+  margin-top: 50px;
+}

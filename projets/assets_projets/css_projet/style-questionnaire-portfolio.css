@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Numans", sans-serif;
+  height: 95vh;
+  background-color: #f0fff5;
+  /* --s: 180px; 
+  --c1: #fffaf0;
+  --c2: #f39e16;
+    --_g: 
+     var(--c1) 0%  5% ,var(--c2) 6%  15%,var(--c1) 16% 25%,var(--c2) 26% 35%,var(--c1) 36% 45%,
+     var(--c2) 46% 55%,var(--c1) 56% 65%,var(--c2) 66% 75%,var(--c1) 76% 85%,var(--c2) 86% 95%,
+     #0000 96%;
+  background:
+    radial-gradient(50% 50% at 100% 0,var(--_g)),
+    radial-gradient(50% 50% at 0 100%,var(--_g)),
+    radial-gradient(50% 50%,var(--_g)),
+    radial-gradient(50% 50%,var(--_g)) calc(var(--s)/2) calc(var(--s)/2)
+    var(--c1);
+  background-size: var(--s) var(--s);
+  */
+}
+
+  
+
+
+.quiz-box {
+  background-color: rgb(40, 167, 54);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+  max-width: 550px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.quiz-box h2 {
+  margin-bottom: 25px;
+  color: #e7ece8;
+  font-size: 22px;
+  text-shadow: 5px 2px 5px rgb(12, 101, 16);
+}
+
+.reponse {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 2px solid #050000;
+  background-color: #f0fff5;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.reponse:hover {
+  background-color: #050000;
+  color: #f0fff5;
+}
+
+#resultat {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  min-height: 24px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suivant {
+  background-color: #f39e16;
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 5px 10px;
+  border: none;
+  color: #f0fff5;
+  cursor: pointer;
+}
+
+#ecranresultat {
+  background-color: #28a736;
+  position: absolute;
+  top: 40%;
+  left: 40.5%;
+  z-index: 10;
+  color: #f0fff5;
+  text-align: center;
+  border-radius: 6px;
+}
+
+
+@keyframes apparition {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+#conteneurrelatif {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

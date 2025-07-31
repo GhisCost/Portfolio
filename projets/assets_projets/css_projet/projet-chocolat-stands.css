@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* nav de louis */
+
+#nav_mobile {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  border: 2px solid #daa520;
+}
+#menu-btn {
+  background-color: #7b3f00;
+  color: #daa520;
+  border: none;
+  height: 40px;
+  font-size: 1em;
+  font-family: "Josefin Sans", sans-serif;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-btn div {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #daa520;
+  border-bottom: 2px solid #daa520;
+  transform: rotateZ(-45deg);
+  margin: 5px 0 10px 5px;
+}
+
+#menu-btn:focus {
+  color: white;
+  div {
+    border-color: white;
+    transform: rotateZ(45deg);
+  }
+}
+/* changer le couleur dans le sous menu c en bas */
+#submenu {
+  position: absolute;
+  top: 100%;
+  left: -2px;
+  background: #7b3f00;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-right: 2px solid #daa520;
+  border-bottom: 2px solid #daa520;
+  border-left: 2px solid #daa520;
+  min-width: 120px;
+  width: fit-content;
+  display: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+#submenu li {
+  padding: 8px 16px;
+  width: 120px;
+}
+#submenu li a {
+  text-decoration: none;
+  color: #daa520;
+  display: block;
+}
+#submenu li a:hover {
+  text-decoration: underline;
+}
+
+/* css de Ghislain*/
+
+#corps {
+  background-color: rgba(218, 165, 32, 0.2);
+  width: 100%;
+}
+
+#nav_ordi {
+  display: none;
+}
+
+#titre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  background-color: #7b3f00;
+  font-size: 1.1em;
+  border-bottom: 3px solid #daa520;
+  align-items: center;
+}
+
+#logo {
+  width: 20%;
+}
+
+#logo img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  width: 70%;
+  text-align: center;
+  color: #daa520;
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+#navetco {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px;
+}
+
+#btn_co {
+  background-color: #7b3f00;
+  color: #daa520;
+  border-color: #daa520;
+  height: 44px;
+  width: 120px;
+  font-size: 1em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#plan {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid #7b3f00;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1em;
+}
+
+#haut_plan {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.grdboitestand {
+  width: 40%;
+  background-color: #daa520;
+  color: #7b3f00;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.boitestand {
+  width: 60px;
+  height: 70px;
+  background-color: #daa520;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boitestand a {
+  text-align: center;
+}
+
+.boitestand img {
+  width: 70%;
+}
+
+#tresgrdboite {
+  background-color: #daa520;
+  color: #7b3f00;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+#prestand {
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ligne_stand {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.carte_stand {
+  display: flex;
+  width: 90%;
+  margin: 15px;
+  justify-content: space-around;
+}
+
+.img_stand {
+  width: 50%;
+}
+
+.img_stand img {
+  width: 100%;
+}
+
+.text_stand {
+  width: 45%;
+  text-align: center;
+  color: #7b3f00;
+}
+
+.text_stand h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 15px;
+}
+
+.text_stand p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+}
+
+.carte_stand:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+footer {
+  background-color: #7b3f00;
+  text-align: center;
+  border-top: 3px solid #daa520;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
+  line-height: 2.5;
+}
+
+footer a {
+  text-decoration: none;
+  color: #daa520;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 15px;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 60px;
+  }
+  #navetco {
+    margin: 15px 25px;
+  }
+  .boitestand {
+    width: 90px;
+    height: 100px;
+  }
+
+  .text_stand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text_stand h2 {
+    padding-bottom: 15px;
+    font-size: 25px;
+  }
+
+  .text_stand p {
+    font-size: 17px;
+  }
+
+  footer ul {
+    padding: 20px 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 75px;
+  }
+  .boitestand {
+    width: 110px;
+    height: 120px;
+  }
+
+  .boitestand a {
+    display: block;
+    width: 90%;
+  }
+
+  footer {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #titre {
+    border-bottom: 4px solid #daa520;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  #logo {
+    width: 140px;
+  }
+
+  #plan {
+    font-size: 1.3em;
+  }
+  .grdboitestand {
+    height: 100px;
+    padding-top: 35px;
+  }
+
+  #haut_plan {
+    margin: 15px 45px;
+  }
+
+  .boitestand {
+    width: 140px;
+    height: 150px;
+  }
+
+  #tresgrdboite {
+    padding: 60px;
+    text-align: center;
+    margin: 10px;
+    height: 150px;
+  }
+
+  .carte_stand {
+    width: 45%;
+  }
+  #nav_mobile {
+    display: none;
+  }
+
+  #nav_ordi {
+    display: block;
+    background-color: #7b3f00;
+    text-align: center;
+    width: 80%;
+    border-radius: 5px;
+  }
+  #nav_ordi ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 0px;
+    line-height: 2.5;
+  }
+
+  #nav_ordi a {
+    text-decoration: none;
+    color: #daa520;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px 20px;
+    font-size: 1.5em;
+  }
+
+  footer {
+    border-top: 4px solid #daa520;
+  }
+
+  #btn_co {
+    display: none;
+  }
+  #navetco {
+    justify-content: center;
+  }
+
+  #co_ordi {
+    border-left: 1px solid #daa520;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grdboitestand {
+    height: 150px;
+    padding-top: 60px;
+  }
+
+  #tresgrdboite {
+    padding: 90px;
+    height: 200px;
+  }
+
+  .boitestand {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  
+
+  #plan {
+    font-size: 1.9em;
+  }
+
+  .grdboitestand {
+    height: 200px;
+    padding-top: 90px;
+  }
+
+  #tresgrdboite {
+    padding: 120px;
+    height: 250px;
+  }
+
+  .boitestand {
+    width: 200px;
+    height: 200px;
+  }
+}

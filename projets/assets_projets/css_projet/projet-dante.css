@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(65, 3, 3);
+}
+
+h1 {
+  color: rgb(136, 14, 14);
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.959), 0 0 3em rgb(51, 45, 45),
+    0 0 0.4em rgba(255, 0, 0, 0.849);
+  font-size: 40px;
+}
+
+#porte {
+  margin: auto;
+  width: 596px;
+}
+
+p {
+  text-align: center;
+  font-size: 150%;
+  font-family: cursive;
+  color: whitesmoke;
+  text-shadow: rgb(211, 8, 8) 1px 0 10px;
+  line-height: 5em;
+}
+
+#pied {
+  color: rgb(10, 9, 9);
+  font-size: medium;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  line-height: normal;
+}
+
+#textegauche {
+  position: absolute;
+  top: 20%;
+  left:5%;
+}
+
+#textedroite {
+  position:absolute;
+  top:20%;
+  right: 5%;
+}

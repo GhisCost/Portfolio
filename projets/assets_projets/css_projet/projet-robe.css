@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Esteban&display=swap");
+
+/* Css général et de l'accueil */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.esteban {
+  font-family: "Esteban", serif;
+}
+
+.cachermobile {
+  display: none;
+}
+
+.arizonia {
+  font-family: "Arizonia", cursive;
+}
+
+#titre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#logo img {
+  width: 100%;
+}
+
+#logo {
+  width: 25%;
+}
+
+#nomdumag {
+  width: 60%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+  color: #ce3db1;
+  margin-left: 5px;
+}
+
+#connexion p {
+  display: none;
+}
+
+#connexion {
+  background-color: rgba(206, 61, 177, 0.23);
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 1.5em;
+  border-radius: 8px;
+  transform: translateX(580%);
+}
+
+#carouselmobile > div > div {
+  height: 500px;
+}
+
+#carouselmobile {
+  height: 100%;
+}
+
+#nav-haut {
+  background-color: white !important;
+}
+
+#nav-haut a {
+  color: #fd8804 !important;
+}
+
+#nav-haut button {
+  border-color: #ce3db1;
+  border-width: 3px;
+}
+
+#menu-mobile {
+  height: 1.5em;
+  width: 1.5em;
+  padding: 5px;
+}
+
+header input {
+  border-color: #fd8804 !important;
+}
+
+header > form > button {
+  border-color: #ce3db1 !important;
+}
+
+header {
+  margin-bottom: 25px;
+}
+
+.fleches-carousel i {
+  font-size: 2.5em;
+}
+
+#div-carte {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carte {
+  position: relative;
+  margin: 15px 0;
+}
+
+.prix-carte {
+  margin: 0;
+  font-size: 65px;
+  color: #ce3db1;
+  position: absolute;
+  right: 1%;
+  top: 5%;
+}
+
+.carte i {
+  position: absolute;
+  font-size: 2em;
+  bottom: 1%;
+  left: 3%;
+}
+
+footer {
+  background-color: rgba(206, 61, 177, 0.08);
+  margin: 0;
+  padding: 0;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fd8804;
+}
+
+footer li {
+  padding: 10px;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  #connexion p {
+    display: inline;
+    color: #fd8804;
+    margin: 0;
+  }
+  #connexion {
+    transform: translateX(300%);
+  }
+
+  header input {
+    width: 30% !important;
+  }
+  header form {
+    justify-content: end;
+  }
+  #carouselmobile {
+    display: none;
+  }
+  .cachermobile {
+    display: block;
+  }
+
+  #carouseltab-ordi > div > div {
+    height: 350px;
+  }
+  #carouseltab-ordi img {
+    height: 100%;
+  }
+  .carte {
+    width: 45%;
+    margin: 10px auto;
+  }
+  .carte > div {
+    height: 500px;
+  }
+  .carte img {
+    height: 100%;
+  }
+
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  #logo {
+    width: 20%;
+  }
+  h1 {
+    font-size: 70px;
+  }
+
+  #connexion {
+    transform: translateX(400%);
+  }
+
+  #carouseltab-ordi > div > div {
+    height: 450px;
+  }
+
+  .carte {
+    width: 40%;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  #connexion {
+    transform: translatey(210%);
+    height: 20%;
+  }
+
+  #nav-haut a {
+    font-size: 25px;
+  }
+
+  #carouseltab-ordi > div > div {
+    height: 510px;
+  }
+
+  .carte {
+    width: 20%;
+  }
+
+  .carte > div {
+    height: 270px;
+  }
+
+  .prix-carte {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #carouseltab-ordi > div > div {
+    height: 600px;
+  }
+
+  .carte > div {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #logo {
+    width: 15%;
+  }
+
+  h1 {
+    font-size: 120px;
+  }
+#connexion {
+    transform: translatey(350%);
+    
+  }
+  #carouseltab-ordi > div > div {
+    height: 700px;
+  }
+
+  .carte > div {
+    height: 450px;
+  }
+}
+
+/* Css du catalogue */
+
+#text-panier { 
+    display:none;
+}

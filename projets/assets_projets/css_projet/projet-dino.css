@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.italic {
+  font-style: italic;
+}
+.gras {
+  font-weight: bold;
+}
+
+#corps {
+  font-family: "Montserrat", sans-serif;
+}
+
+a:not(#billet > a):hover {
+  border-top: 1px solid white;
+}
+
+a:not(#billet > a):focus {
+  border: 1px solid #8dae4f;
+}
+
+header {
+  background-image: url(../img_projets/dinosaure.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100%;
+  position: relative;
+}
+
+#nav-header {
+  background-color: rgba(0, 0, 0, 0.397);
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+#nav-mobile {
+  color: white;
+  font-size: 2em;
+  display: none;
+}
+
+#nav-header ul {
+  display: flex;
+  list-style: none;
+  padding: 25px 100px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#nav-header a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+#logo {
+  padding-top: 100px;
+  transform: translate(80%);
+  width: 39%;
+}
+
+#logo img {
+  width: 100%;
+}
+
+#billet {
+  background-color: #1c5f81;
+  padding: 5px 30px;
+}
+
+#billet:hover {
+  background-color: white;
+}
+
+#billet > a:hover {
+  color: #1c5f81;
+}
+
+#langue a:first-child {
+  border-right: 1px solid white;
+}
+
+#langue a:last-child {
+  color: grey;
+  border-left: 1px solid white;
+  padding-left: 2px;
+}
+
+#clim {
+  position: absolute;
+  right: 0;
+  top: 73vh;
+}
+
+#sec-descri {
+  width: 40%;
+  margin: 50px auto;
+}
+#sec-descri img {
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+
+#legende-entree {
+  display: none;
+  text-align: center;
+}
+
+#sec-descri figure:hover {
+  transform: scale(1.1);
+  #legende-entree {
+    display: block;
+    color: #9b0c0c;
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+#txt-long {
+  line-height: 1.7;
+  font-size: 0.95em;
+  margin: 30px 0;
+}
+
+.txt-ptit {
+  text-align: center;
+  font-weight: 550;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+#div-bouton {
+  display: flex;
+  justify-content: center;
+}
+#div-bouton button {
+  background-color: #1c5f81;
+  color: white;
+  padding: 15px 60px;
+  margin: 15px;
+}
+
+#div-bouton button:hover,
+#tarifs-horraires button:hover {
+  background-color: white;
+  color: #1c5f81;
+  border: 1px solid #1c5f81;
+}
+
+#pratique {
+  display: flex;
+  width: 60%;
+  margin: 100px auto;
+  line-height: 1.5em;
+  justify-content: space-between;
+}
+
+#tarifs-horraires hr {
+  height: 1px;
+  background-color: lightgray;
+  margin: 25px 0;
+}
+
+.div-img-metro {
+  width: 20px;
+}
+
+.div-img-metro img {
+  width: 100%;
+}
+
+#p-metro {
+  display: flex;
+  gap: 2px;
+}
+
+#tarifs-horraires h2,
+#acces h2 {
+  margin: 25px 0;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+#tarifs-horraires {
+  width: 45%;
+}
+
+#acces {
+  width: 45%;
+}
+
+#tarifs-horraires button {
+  background-color: #1c5f81;
+  color: white;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+
+#partenaire {
+  width: 60%;
+  margin: 100px auto;
+}
+
+#partenaire h2 {
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+#div-part {
+  display: flex;
+  justify-content: space-around;
+}
+#logo-tf1 {
+  width: 80px;
+}
+
+#logo-bfm {
+  width: 60px;
+}
+
+#logo-jdd {
+  width: 100px;
+}
+
+#logo-rtl {
+  width: 70px;
+}
+#div-part img {
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  padding: 150px 0 50px 0;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer li {
+  line-height: 1.5em;
+}
+
+@media (max-width: 1400px) {
+  header {
+    height: 60vh;
+  }
+
+  #clim {
+    top: 39vh;
+  }
+  #sec-descri {
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    height: 45vh;
+  }
+  #clim {
+    top: 24vh;
+  }
+
+  #sec-descri {
+    width: 60%;
+  }
+
+  #pratique {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  #acces,
+  #tarifs-horraires {
+    width: 80%;
+    margin: auto;
+  }
+  #partenaire {
+    width: 80%;
+  }
+
+  footer {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  #sec-descri {
+    width: 80%;
+  }
+
+  #acces,
+  #tarifs-horraires {
+    width: 90%;
+  }
+  #acces iframe {
+    width: 100%;
+  }
+  #nav-mobile {
+    display: block;
+  }
+  #nav-header li:not(#billet) {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  #nav-header ul {
+    justify-content: space-between;
+    padding: 15px 75px;
+  }
+  #clim {
+    width: 40%;
+  }
+  #clim img {
+    width: 100%;
+  }
+
+  #logo {
+    padding-top: 75px;
+    transform: translate(60%);
+    width: 45%;
+  }
+
+  header {
+    height: 33vh;
+  }
+  #clim {
+    top: 19vh;
+  }
+  #pratique {
+    width: 80%;
+  }
+
+  #partenaires {
+    width: 100%;
+  }
+  footer {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  footer li { 
+    text-align: center;
+  }
+}
+
+
