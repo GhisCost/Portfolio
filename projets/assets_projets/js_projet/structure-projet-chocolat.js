@@ -1,6 +1,6 @@
-const btn = document.getElementById('menu-btn');
-const submenu = document.getElementById('submenu');
-const div = btn.querySelector('div');
+let btn = document.getElementById('menu-btn');
+let submenu = document.getElementById('submenu');
+let div = btn.querySelector('div');
  
 btn.addEventListener('click', (e) => {
   e.stopPropagation();

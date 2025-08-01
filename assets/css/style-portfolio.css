@@ -36,7 +36,6 @@ a{
   font-family: "Bonheur Royale", cursive;
   font-size: 90px;
   color: #f0fff5;
-  /* -webkit-text-stroke: 0.4px #F39E16; */
   padding: 10px;
   background-color: #28a736;
   mask:
@@ -47,7 +46,6 @@ a{
 
 .titrepages {
   color: #28a736;
-  /* -webkit-text-stroke: 0.4px #F39E16; */
    font-family: "Bonheur Royale", cursive;
   font-size: 90px;
   text-align: center;
@@ -71,8 +69,8 @@ header {
   text-decoration: none;
   color: rgb(243, 158, 22);
   font-size: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .lienaccueil:hover{
   border-top: rgb(40, 167, 54) 1px solid;
@@ -84,8 +82,8 @@ header {
   align-items: center;
   margin: auto;
   margin-top: 40px;
-  justify-content: space-evenly;
-  width: 50%;
+  justify-content: center;
+  width: 100%;
 }
 
 #divtitre {
@@ -133,7 +131,7 @@ footer {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(240, 255, 245, 0), rgba(243, 158, 22, 0.75), rgba(240, 255, 245, 0));
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -145,10 +143,40 @@ footer {
 .sectionpage iframe {
   margin-bottom: 15px;
 }
-.sectionpage:hover{
-  box-shadow: 2px 2px 6px #F39E16;
-  font-style: italic;
+
+.trait-orange-gauche{
+  display: inline-block;
+  height: 2px;
+  width: 350px;
+  background-image: linear-gradient(to right, rgba(240, 255, 245, 0), rgba(243, 158, 22, 0.75));
+  margin-right: 25px;
 }
+
+.trait-orange-droite {
+display: inline-block;
+  height: 2px;
+  width: 350px;
+  background-image: linear-gradient(to left, rgba(240, 255, 245, 0), rgba(243, 158, 22, 0.75));
+  margin-left: 25px;
+}
+
+#nav-mobile {
+  display: none;
+}
+
+#ul-nav-mobile {
+  list-style: none;
+}
+
+#ul-nav-mobile a {
+  text-decoration: none;
+  color: #F39E16;
+}
+
+#ul-nav-mobile li {
+  padding: 10px;
+}
+
 /* Css spécifique à la page histoire */
 
 
@@ -211,7 +239,9 @@ footer {
   margin: auto;
   flex-wrap: wrap;
 margin-top: 50px;
+justify-content: space-around;
 }
+
 
 .carteprojet img {
   width: 100%;
@@ -264,7 +294,7 @@ text-align: center;
 
 .divimginfo {
 width: 10%;
-
+padding: 15px;
 }
 
 .divimginfo img {
@@ -273,21 +303,61 @@ width: 100%;
 }
 
 .soustitreinfo{
-  color: #28a736;
+ display: flex;
+align-items: center;
+justify-content: space-around;
+  margin-bottom: 45px;
+
+}
+
+
+.soustitreinfo h2 {
+   color: #28a736;
   text-align: center;
   font-size: 40px;
-  margin-bottom: 45px;
 }
 
 #textcomp{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin:auto;
 }
 
 #textcomp p{
 color: #F39E16;
 font-size: 20px;
+}
+
+
+.carteinfo{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 15px;
+}
+
+.divimgcomp{
+  width: 100%;
+}
+
+.divimgcomp img {
+  width: 70%;
+}
+
+#divCV {
+width: 80%;
+margin: auto;
+}
+
+#imgCV{
+  width: 25%;
 }
 
 /* Css spécifique contact */
@@ -313,10 +383,17 @@ font-size: 20px;
 }
 
 .soustitrecontact{
+margin-bottom: 25px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.soustitrecontact h2 {
   color: rgb(40, 167, 54);
   text-align: center;
 font-size: 40px;
-margin-bottom: 25px;
+width: 300px;
 }
 
 
@@ -337,21 +414,28 @@ margin-bottom: 25px;
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 80%;
   margin: auto;
-  height: 150px;
+  min-height: 150px;
 }
 .iconecontact{
   font-size: 35px;
 }
 
-#conteneurcarte{
+#conteneurmap{
   display: flex;
   justify-content: center;
   margin-top: 25px;
   margin-bottom: 15px;
-
+  width: 100%;
 }
+
+#carte {
+  width: 400px;
+  height: 300px;
+}
+
 /* Css transition */
 #corpsAc, .page-transition {
   position: relative;
@@ -385,3 +469,94 @@ margin-bottom: 25px;
 .slide-right-in.show { transform: translateX(0); }
 .slide-up-in.show { transform: translateY(0); }
 .slide-down-in.show { transform: translateY(0); }
+
+
+
+@media (max-width:1200px){
+
+   #conteneurtitrenav {
+   width: 80%;
+  } 
+  #bio{
+    width:80%
+  }
+
+   .pied {
+    width: 80%;
+  }
+   #carte {
+  width: 60%;
+ }
+.divimginfo{
+  width: 20%;
+}
+
+#titrenavpro{
+  width: 80%;
+}
+
+#titrenavinfo{
+  width: 80%;
+}
+
+}
+
+
+
+@media (max-width:992px){
+
+  #divtitre{
+    padding: 15px 40px;
+  }
+
+  .titrepages {
+    font-size: 60px;
+  }
+
+  #navhistoire{
+    margin-bottom: 40px;
+  }
+
+  .conteneurcontact{
+    width: 100%;
+  }
+  
+  .sectionpage {
+    width: 80%;
+  }
+
+.divimginfo{
+  width: 25%;
+}
+
+.ptextcarte {
+  font-size: 15px;
+}
+
+.carteprojet{
+  width: 35%;
+}
+
+#navprojet{
+  margin-bottom: 20px;
+}
+}
+
+@media (max-width:768px){
+  .lienaccueil {
+    display: none;
+  }
+
+  #nav-mobile{
+    display: block;
+  }
+
+  #navtitre{
+    flex-direction: column;
+  }
+
+  #ul-nav-mobile{
+    display: none;
+  }
+
+}
