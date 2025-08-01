@@ -27,24 +27,7 @@
               >Histoire</a
             >
 
-            <nav id="nav-mobile">
-              <div id="menu-nav-mobile">
-                <ul id="ul-nav-mobile">
-                  <li><a href="#">Informations</a></li>
-                  <li><a href="#">Histoire</a></li>
-                  <li><a href="#">Projets</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-              <div id="ouverture">
-                <img
-                  src="./assets/img/menu-4-48.png"
-                  alt="trois barre horrizontal orange"
-                />
-              </div>
-              
-
-            </nav>
+            
 
             <div id="divtitre">
               <div id="coin"></div>
@@ -66,6 +49,46 @@
               Developpeur web en formation, ergonome diplomé.
             </h2>
           </div>
+        <nav id="nav-mobile">
+          <div id="ouverture" onclick="faireApparaitre()">
+                <img
+                  src="./assets/img/menu-4-48.png"
+                  alt="trois barre horrizontal orange"
+                />
+              </div>
+              <div id="menu-nav-mobile" class="apparait" >
+                <div class="ul-nav-mobile">
+                  <a
+              class="liennavmobile"
+              href="#"
+              onclick="loadPage('informations-portfolio.html', 'down')"
+              >Informations</a
+            >
+                 <a
+              class="liennavmobile"
+              href="#"
+              onclick="loadPage('histoire-portfolio.html', 'right')"
+              >Histoire</a
+            >
+                   <a
+              class="liennavmobile"
+              href="#"
+              onclick="loadPage('projets-portfolio.html', 'left')"
+              >Projets</a
+            >
+                   <a
+              class="liennavmobile"
+              href="#"
+              onclick="loadPage('contact-portfolio.html', 'up')"
+              >Contact</a
+            >
+
+                </div>
+              </div>
+              
+              
+
+            </nav>
           <div id="bastitre">
             <a
               class="lienaccueil"
