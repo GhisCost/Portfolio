@@ -686,7 +686,10 @@ footer {
 #paragraphe_lycee, #paragraphe_p8{
   flex-direction: column-reverse;
 }
- 
+
+  #corpsAc{
+    padding-bottom: 80px;
+  }
 
 }
 
