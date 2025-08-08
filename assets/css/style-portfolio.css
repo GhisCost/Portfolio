@@ -170,7 +170,6 @@ footer {
 #nav-mobile {
   display: none;
   position: relative;
-  display: inline-block;
   z-index: 1;
 }
 
@@ -194,8 +193,9 @@ footer {
   display: none;
   position: absolute;
   z-index: 5;
-  /* top:-300%;
-  left:-110%; */
+  padding-top: 10px;
+  top:110%;
+  /* left:24%; */
 }
 
 #ouverture {
@@ -218,7 +218,8 @@ footer {
 
 #bio p {
   margin: 20px;
-  color: #0a250d;
+  color: #28a736;
+  
 }
 
 #bio a {
@@ -237,6 +238,31 @@ footer {
   flex-direction: column;
   padding-top: 50px;
   margin-bottom: 80px;
+}
+
+.paragraphe_bio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  align-items: center;
+  
+}
+
+.paragraphe_bio>p{
+  width: 50%;
+}
+
+
+.div-img-histoire{
+  width: 45%;
+}
+
+.img_histoire {
+  width: 100%;
+}
+
+.sousparagraphe {
+  width: 50%;
 }
 
 /* Css spécifique à la page projet */
@@ -345,7 +371,6 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 80%;
@@ -535,6 +560,14 @@ footer {
   }
 }
 
+@media (max-width: 999px) {
+
+  .paragraphe_bio>p {
+    width: 45%;
+  }
+
+}
+
 @media (max-width: 992px) {
   #divtitre {
     padding: 15px 40px;
@@ -579,11 +612,127 @@ footer {
   }
   #nav-mobile{
     display: block;
+    width: 90%;
+    margin: auto;
+    height: fit-content;
   }
   #ouverture {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
   }
   #navtitre {
     flex-direction: column;
   }
+
+  header{
+    height: fit-content;
+  }
+
+  #titrenavpro{
+    justify-content: center;
+  }
+
+  #menu-nav-mobile{
+    margin-bottom: 10px;
+    background-color: #f0fff5;
+    box-shadow: 2px 4px 5px #f39e16;
+    text-align: center;
+    width: 100%;
+  }
+  
+
+.carteprojet {
+  width: 43%;
+  margin-right: 5px;
+  margin-left: 5px;
 }
+
+.conteneurcarte{
+  width: 90%;
+}
+
+.trait-orange-droite, .trait-orange-gauche {
+  flex-shrink: 1.7;
+}
+
+#textcomp{
+
+  width:90%;
+}
+
+.sectionpage{
+  width: 90%;
+}
+
+#conteneurtitrenav{
+  justify-content: center;
+}
+
+.paragraphe_bio>p{
+  width: 100%;
+}
+
+.div-img-histoire{
+  width: 100%;
+}
+
+.sousparagraphe { 
+  width: 100%;
+}
+
+#paragraphe_lycee, #paragraphe_p8{
+  flex-direction: column-reverse;
+}
+ 
+
+}
+
+@media (max-width:578px){
+
+  #carte{
+    width: 90%;
+  }
+  
+  footer p {
+    font-size: 14px
+  }
+
+  #navcontact{
+    margin-bottom: 25px;
+  }
+
+  .conteneurcontact{
+    justify-content: space-around
+  }
+
+  .carteprojet{
+    width: 80%;
+  }
+
+  .divimginfo{
+    width: 40%;
+  }
+
+  .soustitreinfo h2{
+    font-size: 26px;
+  }
+
+  #textcomp p {
+    font-size: 16px;
+  }
+
+  #imgCV {
+    width: 65%;
+  }
+
+  #bio{
+    width: 95%;
+  }
+
+  #bio p {
+    font-size: 14px;
+  }
+};

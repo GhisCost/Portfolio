@@ -36,18 +36,21 @@ function loadPage(url, direction) {
 // JS nav-mobile
 
 function faireApparaitre(){
-  document.getElementById("menu-nav-mobile").classList.toggle("montrer")
+
+  document.getElementById("menu-nav-mobile").classList.toggle("montrer");
+  
 };
 
-window.onclick = function(event) {
-  if (!event.target.matches('#ouverture')) {
-    var dropdowns = document.getElementsByClassName("ul-nav-mobile");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
+document.addEventListener('click', function(event) {
+  
+  if (!event.target.matches('#ouverture') && !event.target.matches('#img-ouverture')) {
+   
+      var openDropdown = document.getElementById('menu-nav-mobile');
+      
       if (openDropdown.classList.contains('montrer')) {
+        
         openDropdown.classList.remove('montrer');
       }
     }
   }
-} 
+  ) 
