@@ -39,6 +39,7 @@ a {
   background-color: #28a736;
   mask: radial-gradient(50px at 0 0, #0000 98%, #000) 0/51% 100% no-repeat,
     radial-gradient(45px at 100% 100%, #0000 98%, #000) 100%/51% 100% no-repeat;
+    font-weight: 400;
 }
 
 .titrepages {
@@ -48,6 +49,7 @@ a {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 5px;
+  font-weight: 400;
 }
 
 #soustitre {
@@ -56,6 +58,7 @@ a {
   margin-top: 10px;
   font-size: 30px;
   margin-bottom: 25px;
+  font-weight: 550;
 }
 
 header {
@@ -113,12 +116,14 @@ footer {
   text-decoration: none;
   color: #0a250d;
   font-weight: 600;
+
 }
 
 .pied a:hover {
   color: rgb(240, 255, 245);
   -webkit-text-stroke: 0.4px #f39e16;
   opacity: 1;
+  font-weight: 500;
 }
 
 .hrpages {
@@ -210,7 +215,7 @@ footer {
 /* Css spécifique à la page histoire */
 
 #bio {
-  width: 50%;
+  width: 60%;
   margin: 25px auto;
   padding-top: 25px;
   text-align: justify;
@@ -453,6 +458,9 @@ footer {
   margin-top: 70px;
   margin-bottom: 50px;
   text-decoration: underline #f39e16;
+  text-decoration-thickness: 1px;
+  text-underline-offset:7px;
+  font-weight: 500;
 }
 
 .conteneurcontact {
@@ -533,6 +541,17 @@ footer {
   transform: translateY(0);
 }
 
+
+@media(max-width:1600px){
+  .paragraphe_bio>p {
+    width: 45%;
+  }
+
+  #bio { 
+    width: 70%;
+  }
+}
+
 @media (max-width: 1200px) {
   #conteneurtitrenav {
     width: 80%;
@@ -560,13 +579,6 @@ footer {
   }
 }
 
-@media (max-width: 999px) {
-
-  .paragraphe_bio>p {
-    width: 45%;
-  }
-
-}
 
 @media (max-width: 992px) {
   #divtitre {
