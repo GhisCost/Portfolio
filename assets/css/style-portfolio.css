@@ -54,7 +54,7 @@ a {
 
 #soustitre {
   color: #f0fff5;
-  -webkit-text-stroke: 0.4px #28a736;
+  -webkit-text-stroke: 1px #28a736;
   margin-top: 10px;
   font-size: 30px;
   margin-bottom: 25px;
@@ -121,7 +121,7 @@ footer {
 
 .pied a:hover {
   color: rgb(240, 255, 245);
-  -webkit-text-stroke: 0.4px #f39e16;
+  -webkit-text-stroke: 0.6px #f39e16;
   opacity: 1;
   font-weight: 500;
 }
@@ -233,7 +233,7 @@ footer {
 
 #bio a:hover {
   color: #f0fff5;
-  -webkit-text-stroke: 0.4px rgb(243, 158, 22);
+  -webkit-text-stroke: 0.6px rgb(243, 158, 22);
 }
 
 #navhistoire {
@@ -451,7 +451,7 @@ footer {
 
 #titretrouver {
   color: #f0fff5;
-  -webkit-text-stroke: 0.4px rgb(40, 167, 54);
+  -webkit-text-stroke: 0.8px rgb(40, 167, 54);
   text-align: center;
   font-family: "Bonheur Royale", cursive;
   font-size: 70px;
