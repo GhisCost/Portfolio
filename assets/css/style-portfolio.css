@@ -121,9 +121,9 @@ footer {
 
 .pied a:hover {
   color: rgb(240, 255, 245);
-  -webkit-text-stroke: 0.6px #f39e16;
+  -webkit-text-stroke: 0.2px #f39e16;
   opacity: 1;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .hrpages {
