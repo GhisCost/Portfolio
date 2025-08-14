@@ -87,3 +87,13 @@ h1 {
     padding-top: 20px;
     margin-top: 60px ;
 }
+
+@media (max-width: 992px){
+    #taskinput{
+        width: 80%;
+    }
+
+    #taskcontainer {
+        width: 70%;
+    }
+}

@@ -149,7 +149,6 @@ footer {
 @media (max-width: 992px) {
   #container {
     width: 60%;
-    transform: translate(35%);
   }
   #textassiette {
     transform: translate(-15%);
@@ -169,7 +168,6 @@ footer {
 @media (max-width: 768px) {
   #container {
     width: 80%;
-    transform: translate(12.5%);
   }
   .divflex {
     flex-direction: column;

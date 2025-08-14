@@ -327,6 +327,15 @@ footer li {
     justify-content: space-between;
     padding: 15px 75px;
   }
+
+  #div-part {
+    flex-wrap: wrap;
+  }
+
+  #div-part div {
+    margin: 15px;
+  }
+
   #clim {
     width: 40%;
   }
@@ -360,6 +369,10 @@ footer li {
 
   footer li { 
     text-align: center;
+  }
+
+  #partenaire h2{
+    font-size: 2.5em;
   }
 }
 
