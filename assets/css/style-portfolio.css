@@ -39,7 +39,7 @@ a {
   background-color: #28a736;
   mask: radial-gradient(50px at 0 0, #0000 98%, #000) 0/51% 100% no-repeat,
     radial-gradient(45px at 100% 100%, #0000 98%, #000) 100%/51% 100% no-repeat;
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .titrepages {
@@ -116,7 +116,6 @@ footer {
   text-decoration: none;
   color: #0a250d;
   font-weight: 600;
-
 }
 
 .pied a:hover {
@@ -190,7 +189,6 @@ footer {
   font-size: 20px;
 }
 
-
 #ouverture {
   display: none;
 }
@@ -199,7 +197,7 @@ footer {
   position: absolute;
   z-index: 5;
   padding-top: 10px;
-  top:110%;
+  top: 110%;
   /* left:24%; */
 }
 
@@ -212,20 +210,19 @@ footer {
   display: block;
 }
 
-
-#btnbouge{
-    background-color:#28a736;
-    color:#f0fff5;
-    border: none;
-    text-align: center;
-    width: 180px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 150px;
-    position: absolute;
-    top: 70%;
-    left:45%;
-    z-index: 5;
+#btnbouge {
+  background-color: #28a736;
+  color: #f0fff5;
+  border: none;
+  text-align: center;
+  width: 180px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 150px;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  z-index: 5;
 }
 
 /* Css spécifique à la page histoire */
@@ -240,7 +237,6 @@ footer {
 #bio p {
   margin: 20px;
   color: #28a736;
-  
 }
 
 #bio a {
@@ -266,15 +262,13 @@ footer {
   flex-wrap: wrap;
   margin-bottom: 10px;
   align-items: center;
-  
 }
 
-.paragraphe_bio>p{
+.paragraphe_bio > p {
   width: 50%;
 }
 
-
-.div-img-histoire{
+.div-img-histoire {
   width: 45%;
 }
 
@@ -475,7 +469,7 @@ footer {
   margin-bottom: 50px;
   text-decoration: underline #f39e16;
   text-decoration-thickness: 1px;
-  text-underline-offset:7px;
+  text-underline-offset: 7px;
   font-weight: 500;
 }
 
@@ -505,8 +499,6 @@ footer {
   width: 400px;
   height: 300px;
 }
-
-
 
 /* Css transition */
 #corpsAc,
@@ -559,13 +551,12 @@ footer {
   transform: translateY(0);
 }
 
-
-@media(max-width:1600px){
-  .paragraphe_bio>p {
+@media (max-width: 1600px) {
+  .paragraphe_bio > p {
     width: 45%;
   }
 
-  #bio { 
+  #bio {
     width: 70%;
   }
 }
@@ -596,7 +587,6 @@ footer {
     width: 80%;
   }
 }
-
 
 @media (max-width: 992px) {
   #divtitre {
@@ -635,7 +625,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  #btnbouge{
+  #btnbouge {
     display: none;
   }
 }
@@ -644,7 +634,7 @@ footer {
   .lienaccueil {
     display: none;
   }
-  #nav-mobile{
+  #nav-mobile {
     display: block;
     width: 90%;
     margin: auto;
@@ -661,99 +651,97 @@ footer {
     flex-direction: column;
   }
 
-  header{
+  header {
     height: fit-content;
   }
 
-  #titrenavpro{
+  #titrenavpro {
     justify-content: center;
   }
 
-  #menu-nav-mobile{
+  #menu-nav-mobile {
     margin-bottom: 10px;
     background-color: #f0fff5;
     box-shadow: 2px 4px 5px #f39e16;
     text-align: center;
     width: 100%;
   }
-  
 
-.carteprojet {
-  width: 43%;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.conteneurcarte{
-  width: 90%;
-}
-
-.trait-orange-droite, .trait-orange-gauche {
-  flex-shrink: 1.7;
-}
-
-#textcomp{
-
-  width:90%;
-}
-
-.sectionpage{
-  width: 90%;
-}
-
-#conteneurtitrenav{
-  justify-content: center;
-}
-
-.paragraphe_bio>p{
-  width: 100%;
-}
-
-.div-img-histoire{
-  width: 100%;
-}
-
-.sousparagraphe { 
-  width: 100%;
-}
-
-#paragraphe_lycee, #paragraphe_p8{
-  flex-direction: column-reverse;
-}
-
-  #corpsAc{
-    padding-bottom: 130px;
+  .carteprojet {
+    width: 43%;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
-}
-
-@media (max-width:578px){
-
-  #carte{
+  .conteneurcarte {
     width: 90%;
   }
-  
-  footer p {
-    font-size: 14px
+
+  .trait-orange-droite,
+  .trait-orange-gauche {
+    flex-shrink: 1.7;
   }
 
-  #navcontact{
+  #textcomp {
+    width: 90%;
+  }
+
+  .sectionpage {
+    width: 90%;
+  }
+
+  #conteneurtitrenav {
+    justify-content: center;
+  }
+
+  .paragraphe_bio > p {
+    width: 100%;
+  }
+
+  .div-img-histoire {
+    width: 100%;
+  }
+
+  .sousparagraphe {
+    width: 100%;
+  }
+
+  #paragraphe_lycee,
+  #paragraphe_p8 {
+    flex-direction: column-reverse;
+  }
+
+  #corpsAc {
+    padding-bottom: 130px;
+  }
+}
+
+@media (max-width: 578px) {
+  #carte {
+    width: 90%;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  #navcontact {
     margin-bottom: 25px;
   }
 
-  .conteneurcontact{
-    justify-content: space-around
+  .conteneurcontact {
+    justify-content: space-around;
   }
 
-  .carteprojet{
+  .carteprojet {
     width: 80%;
   }
 
-  .divimginfo{
+  .divimginfo {
     width: 40%;
   }
 
-  .soustitreinfo h2{
+  .soustitreinfo h2 {
     font-size: 26px;
   }
 
@@ -765,11 +753,11 @@ footer {
     width: 65%;
   }
 
-  #bio{
+  #bio {
     width: 95%;
   }
 
   #bio p {
     font-size: 14px;
   }
-};
+}
