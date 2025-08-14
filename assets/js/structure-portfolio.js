@@ -54,3 +54,43 @@ document.addEventListener('click', function(event) {
     }
   }
   ) 
+
+
+  // Js bouton
+
+  let btn = document.querySelector("#btnbouge");
+
+function positionrdn() {
+  let y = Math.round(Math.random() * 80);
+  let x = Math.round(Math.random() * 80);
+  btn.style.left = `${x}%`;
+  btn.style.top = `${y}%`;
+}
+
+function couleurInfini() {
+  let rgb = [
+    Math.round(Math.random() * 255),
+    Math.round(Math.random() * 255),
+    Math.round(Math.random() * 255),
+  ];
+
+  return rgb;
+}
+let codergb;
+
+btn.addEventListener("mouseover", function () {
+  btn.style.position = "asbolute";
+  positionrdn();
+  codergb = couleurInfini();
+  btn.style.backgroundColor = `rgb(${codergb[0]},${codergb[1]},${codergb[2]})`;
+});
+
+let boiteMessage = document.querySelector('divmessage');
+
+// btn.addEventListener("click",function(){
+//   let message = document.createElement ('p');
+  
+//   message.textContent= "Bravo vous avez reussi à cliquer sur le boutton fuyard. En Espérant que vous l'ayez fait sans tricher. Vous n'avez rien gagné si ce n'est le droit de recommencer";
+
+//   message.style.color = "rgb(243, 158, 22)"
+// })

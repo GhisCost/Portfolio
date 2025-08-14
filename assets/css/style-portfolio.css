@@ -212,6 +212,22 @@ footer {
   display: block;
 }
 
+
+#btnbouge{
+    background-color:#28a736;
+    color:#f0fff5;
+    border: none;
+    text-align: center;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 150px;
+    position: absolute;
+    top: 70%;
+    left:45%;
+    z-index: 5;
+}
+
 /* Css spécifique à la page histoire */
 
 #bio {
@@ -617,6 +633,10 @@ footer {
 
   #navprojet {
     margin-bottom: 20px;
+  }
+
+  #btnbouge{
+    display: none;
   }
 }
 
