@@ -72,7 +72,7 @@ function positionrdn() {
   btn.style.top = `${y}%`;
   let codergb;
   codergb = couleurInfini();
-  btn.style.backgroundColor = `rgb(${codergb[0]},${codergb[1]},${codergb[2]})`;
+  btn.style.color = `rgb(${codergb[0]},${codergb[1]},${codergb[2]})`;
 }
 
 document.addEventListener("mouseover", function (event) {
@@ -86,7 +86,7 @@ document.addEventListener("click", function (event) {
     let boiteMessage = document.querySelector("#divmessage");
     let message = document.createElement("p");
     message.textContent =
-    "Bravo vous avez reussi à cliquer sur le boutton fuyard. En espérant que vous l'ayez fait sans tricher. Vous n'avez rien gagné si ce n'est le droit de recommencer";
+    "Bravo vous avez attraper le dragon. En espérant que vous l'ayez fait sans tricher. Vous n'avez rien gagné si ce n'est le droit de recommencer";
     message.style.color = "rgb(243, 158, 22)";
     boiteMessage.appendChild(message);
   
