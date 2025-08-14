@@ -225,6 +225,10 @@ footer {
   z-index: 5;
 }
 
+#divmessage p {
+  padding: 15px;
+}
+
 /* Css spécifique à la page histoire */
 
 #bio {
